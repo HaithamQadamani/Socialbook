@@ -1,0 +1,42 @@
+@import './leftsidebar.css';
+@import './rightsidebar.css';
+@import './maincontent.css';
+@import './footer.css';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-sidebar {
+    /*background: #cbdffa; remove it to remove the color of background*/
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    /*height: 100vh; not requierd cuz we add stick position to nav*/
+}
+
+.right-sidebar {
+    /*background: #cbdffa; remove it to remove the color of background*/
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+    /*height: 100vh; not requierd cuz we add stick position to nav*/
+}
+
+.main-content {
+    flex-basis: 47%;
+}
+
+
+/* import leftside bar here */
+/* import Main Content here */
+/* import Rightside bar here */
+/* import footer.css here */

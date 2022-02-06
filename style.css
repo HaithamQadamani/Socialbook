@@ -1,0 +1,19 @@
+@import './css/navbar.css';
+@import './css/online.css';
+@import './css/container.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    /* we add to fix the event calender at right side bar hieht and width */
+    box-sizing: border-box;
+}
+
+body {
+    background: #efefef;
+}
+
+/* import navbar.css > navbar */
+/* import online.css > navbar/green spot */
+/* import container.css > main page */

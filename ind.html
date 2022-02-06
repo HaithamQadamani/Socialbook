@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="div1">A DIV element...</div>
+    <div id="div2">Another DIV element</div>
+    <div id="div3" hidden>A hidden DIV element</div>
+    <button onclick="switchHidden()">Click to hide visible DIVs and show hidden ones</button>
+    <script type="text/javascript">
+        function switchHidden() {
+            document.getElementById("div1").hidden = !document.getElementById("div1").hidden;
+            document.getElementById("div2").hidden = !document.getElementById("div2").hidden;
+            document.getElementById("div3").hidden = !document.getElementById("div3").hidden;
+            // alternatively you could do something like Array.prototype.forEach.call(document.getElementsByTagName("div"), div => div.hidden = !div.hidden);
+        }
+    </script>
+</body>
+</html>
