@@ -10,8 +10,29 @@
     box-sizing: border-box;
 }
 
+/* to add black-white color functionality */
+:root {
+    /* for body color at body{} */
+    --body-color: #efefef;
+    /* for nav color  at nav{} at navbar.css*/
+    --nav-color: #1876f2;
+    /* for background color at righside-bar{} at container.css
+    write-post-container{} & post-container{} at maincontent.css
+    settings-menu{} at navbar.css*/
+    --bg-color: #fff;
+}
+
+/* for dark theme it will apply at body{} when click on toogle botten, so we go to js*/
+.dark-theme {
+    --body-color: #0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+}
+
 body {
-    background: #efefef;
+    background: var(--body-color);
+    /* time for switch color */
+    transition: background 0.3s;
 }
 
 /* import navbar.css > navbar */
